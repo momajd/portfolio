@@ -64,7 +64,7 @@ particlesJS('particles-js',
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0.5,
         "width": 1
       },
       "move": {
@@ -90,7 +90,7 @@ particlesJS('particles-js',
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "bubble"
         },
         "resize": true
       },
@@ -102,10 +102,10 @@ particlesJS('particles-js',
           }
         },
         "bubble": {
-          "distance": 400,
-          "size": 40,
+          "distance": 300,
+          "size": 20,
           "duration": 2,
-          "opacity": 8,
+          "opacity": 0.6,
           "speed": 3
         },
         "repulse": {
@@ -131,5 +131,3 @@ particlesJS('particles-js',
   }
 
 );
-
-// #a49192
