@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, Link, hashHistory} from 'react-router';
 import Home from './home';
 import Navbar from './navbar';
 import About from './about';
+import Skills from './skills';
 
 class App extends React.Component {
   render() {
@@ -22,6 +23,7 @@ const appRouter = (
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="about" component={About}/>
+      <Route path="skills" component={Skills}/>
     </Route>
   </Router>
 );

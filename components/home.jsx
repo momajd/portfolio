@@ -15,10 +15,18 @@ export default class Home extends React.Component {
         <p className="description">Software Developer</p>
 
         <div className="home-icons">
-          <i className="fa fa-github" aria-hidden="true"></i>
-          <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i className="fa fa-facebook-square" aria-hidden="true"></i>
-          <i className="fa fa-envelope" aria-hidden="true"></i>
+          <a href="http://github.com/momajd">
+            <i className="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="http://linkedin.com/in/momajd">
+            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a href="http://facebook.com/momajd">
+            <i className="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:mo.a.majd@gmail.com">
+            <i className="fa fa-envelope" aria-hidden="true"></i>
+          </a>
         </div>
         </ReactCSSTransitionGroup>
       </div>
