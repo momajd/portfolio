@@ -6,7 +6,7 @@ export default class Home extends React.Component {
     return (
       <div className="home-container">
         <ReactCSSTransitionGroup
-          transitionName="home"
+          transitionName="react-transition"
           transitionAppear={true}
           transitionEnterTimeout={500}
           transitionLeaveTimeout={500}
