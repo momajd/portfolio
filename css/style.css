@@ -1,11 +1,16 @@
-body, a {
+body {
   color: #333;
   font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: inherit;
 }
 
 .section-title {
   font-size: 36px;
   text-align: center;
+  color: #676666
 }
 
 .navbar a {
@@ -92,11 +97,11 @@ body, a {
   transform: translate(0px,-10px); /* Standard syntax */
 }
 
-.about {
+.about-page {
   position: absolute;
   display: flex;
   margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 50px; left: 0; bottom: 0; right: 0;
   width: 75%;
   height: 80%;
   background-color: #FFFFFF;
@@ -110,6 +115,7 @@ body, a {
   padding: 60px;
   font-size: 16px;
   line-height: 140%;
+  color: #676666;
 }
 
 .portrait {
@@ -123,7 +129,7 @@ body, a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.skills {
+.skills-page {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -133,13 +139,12 @@ body, a {
   width: 50%;
   max-width: 500px;
   height: 50%;
+  max-height: 500px;
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  overflow: hidden;
-  /**/
+  overflow: auto;
   padding: 40px;
-  font-size: 40px;
 }
 
 .skills-container {
@@ -163,6 +168,64 @@ body, a {
 
 .skill p {
   margin-top: 10px;
+}
+
+.projects-page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 40px;
+  top: 50px; left: 0; bottom: 0; right: 0;
+  width: 60%;
+  height: 70%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+}
+
+.projects-container {
+  margin-top: 40px;
+}
+
+.project {
+  display: flex;
+  color: #676666;
+}
+
+.project i {
+  margin-left: 6px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #676666;
+}
+
+.image {
+  width: 40%;
+  margin-right: 60px;
+  /*display: inline-block;
+  padding-right: 2.5em;
+  vertical-align: middle;
+  width: 48%;
+  position: relative;
+  margin: 0;*/
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+  /*display: block;
+  width: 100%;*/
+}
+
+.project-description {
+  font-size: 18px;
+  width: 60%;
 }
 
 .react-transition-appear {

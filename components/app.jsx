@@ -6,6 +6,7 @@ import Home from './home';
 import Navbar from './navbar';
 import About from './about';
 import Skills from './skills';
+import Projects from './projects';
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ const appRouter = (
       <IndexRoute component={Home}/>
       <Route path="about" component={About}/>
       <Route path="skills" component={Skills}/>
+      <Route path="projects" component={Projects}/>
     </Route>
   </Router>
 );

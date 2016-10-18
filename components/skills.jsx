@@ -11,8 +11,8 @@ export default class Skills extends React.Component {
         transitionLeaveTimeout={500}
         transitionAppearTimeout={500}>
 
-        <div className="skills">
-          <h1>Skills</h1>
+        <div className="skills-page">
+          <h1 className="section-title">Skills</h1>
           <div className="skills-container">
             <span className="skill">
               <i className="devicon-javascript-plain"></i>

@@ -11,7 +11,7 @@ export default class About extends React.Component {
         transitionLeaveTimeout={500}
         transitionAppearTimeout={500}>
 
-        <div className='about'>
+        <div className='about-page'>
           <div className='about-content'>
             <h1 className='section-title'>About Me</h1>
             <br/>
