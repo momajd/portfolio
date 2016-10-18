@@ -49,6 +49,7 @@ export default class Projects extends React.Component {
                 <i className="devicon-rails-plain"></i>
                 <i className="devicon-react-original"></i>
                 <i className="devicon-postgresql-plain"></i>
+                <i className="devicon-bootstrap-plain"></i>
               </p>
               <hr/>
               <p>99Bridges is an original full-stack application that allows
@@ -71,8 +72,9 @@ export default class Projects extends React.Component {
                 <i className="devicon-html5-plain"></i>
               </p>
               <hr/>
-              	<p>A sudoku solver that uses a backtracking algorithm. Built
-                  with Javascript and HTML5 Canvas.
+              	<p>A sudoku solver that uses a backtracking algorithm. Renders
+                  animations asynchronously from a queue. Built with Javascript
+                  and HTML5 Canvas.
                 </p>
             </div>
           </div>
@@ -93,7 +95,7 @@ export default class Projects extends React.Component {
               <hr/>
                 <p>Remake of the classic arcade game using Javascript, jQuery,
                   HTML5, and CSS. All rendering is done by manipulating HTML
-                  elements with jQuery
+                  elements with jQuery.
                 </p>
             </div>
           </div>
