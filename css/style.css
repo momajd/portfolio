@@ -190,6 +190,7 @@ a {
 .project {
   display: flex;
   margin-top: 40px;
+  min-height: 200px;
 }
 
 .project i {
@@ -204,6 +205,7 @@ a {
 .image {
   width: 40%;
   margin-right: 60px;
+  margin-bottom: 20px;
 }
 
 .project img {
