@@ -1,6 +1,6 @@
 body {
-  color: #333;
   font-family: 'Roboto', sans-serif;
+  color: #676666;
 }
 
 a {
@@ -15,6 +15,7 @@ a {
 
 .navbar a {
   position: relative;
+  color: #333;
 }
 
 .navbar a:before {
@@ -68,6 +69,7 @@ a {
   top: 0; left: 0; bottom: 0; right: 0;
   width: 45%;
   height: 20%;
+  color: #333;
 }
 
 .title {
@@ -115,7 +117,6 @@ a {
   padding: 60px;
   font-size: 16px;
   line-height: 140%;
-  color: #676666;
 }
 
 .portrait {
@@ -186,13 +187,9 @@ a {
   overflow: auto;
 }
 
-.projects-container {
-  margin-top: 40px;
-}
-
 .project {
   display: flex;
-  color: #676666;
+  margin-top: 40px;
 }
 
 .project i {
@@ -202,25 +199,16 @@ a {
 .project-title {
   font-size: 22px;
   font-weight: 700;
-  color: #676666;
 }
 
 .image {
   width: 40%;
   margin-right: 60px;
-  /*display: inline-block;
-  padding-right: 2.5em;
-  vertical-align: middle;
-  width: 48%;
-  position: relative;
-  margin: 0;*/
 }
 
 .project img {
   width: 100%;
   border-radius: 5px;
-  /*display: block;
-  width: 100%;*/
 }
 
 .project-description {
