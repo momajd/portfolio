@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import ImageOverlay from './image_overlay';
 
 export default class Projects extends React.Component {
 
