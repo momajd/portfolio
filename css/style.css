@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   color: #676666;
 }
 
@@ -222,8 +223,22 @@ a {
 }
 
 .project-description {
-  font-size: 18px;
   width: 60%;
+}
+
+.filter-container {
+  margin-top: 20px;
+}
+
+.filter-item {
+  margin: 16px;
+  cursor: pointer;
+}
+
+.filter-item-underlined {
+  margin: 16px;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .react-transition-appear {

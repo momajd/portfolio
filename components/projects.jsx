@@ -14,12 +14,26 @@ export default class Projects extends React.Component {
   }
 
   render () {
-    let filters = ["All", "Ruby", "Rails", "PostgreSQL", "Javascript",
+    let filters = ["All", "Ruby", "Rails", "Javascript",
                     "React", "jQuery", "Algorithm", "HTML5"];
 
-    let filterItems = filters.map(filter => {
-                 return <span key={filter} onClick={this.updateFilter.bind(this)}>{filter}</span>;
-               });
+    let filterItems = (
+      filters.map(filter => {
+        let filterClass = this.state.filterItem === filter.toLowerCase() ? (
+          "filter-item-underlined") : ("filter-item");
+
+        return (<span key={filter} onClick={this.updateFilter.bind(this)}
+                className={filterClass}>
+                  {filter}
+                </span>);
+        })
+      );
+
+    let filterItemsWithSeparator = [];
+    for (let i = 0; i < filterItems.length; i++) {
+      if (i !== 0) { filterItemsWithSeparator.push(<span key={i}> / </span>); }
+      filterItemsWithSeparator.push(filterItems[i]);
+    }
 
     return (
       <ReactCSSTransitionGroup
@@ -31,8 +45,8 @@ export default class Projects extends React.Component {
         <div className="projects-page">
           <h1 className="section-title">Projects</h1>
 
-          <div>
-            {filterItems}
+          <div className="filter-container">
+            {filterItemsWithSeparator}
           </div>
 
           <Project title="InsanFran" url="http://insanfran.us"
@@ -63,7 +77,7 @@ export default class Projects extends React.Component {
 
           <Project title="Tron" url="http://momajd.github.io/Tron/"
             filter={this.state.filterItem}
-            technologies={["javascript", "jquery", "html5", "algorithm"]}
+            technologies={["javascript", "jquery", "html5"]}
             imageUrl="http://i.imgur.com/yphZFFg.gif"
             description="Remake of the classic arcade game using Javascript, jQuery,
               HTML5, and CSS. All rendering is done by manipulating HTML
@@ -86,6 +100,12 @@ export default class Projects extends React.Component {
               and finds matching routes using regular expression, envokes a
               controller action, and constructs a response using ERB templating." />
 
+            <Project title="Mo Majd" url="http://momajd.com"
+            filter={this.state.filterItem}
+            technologies={["react"]}
+            imageUrl="images/Portfolio.png"
+            description="The site you are currently on was built from scratch
+              using React. The cool background is from the particles.js library" />
         </div>
       </ReactCSSTransitionGroup>
     );

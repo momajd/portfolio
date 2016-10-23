@@ -28471,15 +28471,30 @@
 	    value: function render() {
 	      var _this2 = this;
 	
-	      var filters = ["All", "Ruby", "Rails", "PostgreSQL", "Javascript", "React", "jQuery", "Algorithm", "HTML5"];
+	      var filters = ["All", "Ruby", "Rails", "Javascript", "React", "jQuery", "Algorithm", "HTML5"];
 	
 	      var filterItems = filters.map(function (filter) {
+	        var filterClass = _this2.state.filterItem === filter.toLowerCase() ? "filter-item-underlined" : "filter-item";
+	
 	        return _react2.default.createElement(
 	          'span',
-	          { key: filter, onClick: _this2.updateFilter.bind(_this2) },
+	          { key: filter, onClick: _this2.updateFilter.bind(_this2),
+	            className: filterClass },
 	          filter
 	        );
 	      });
+	
+	      var filterItemsWithSeparator = [];
+	      for (var i = 0; i < filterItems.length; i++) {
+	        if (i !== 0) {
+	          filterItemsWithSeparator.push(_react2.default.createElement(
+	            'span',
+	            { key: i },
+	            ' / '
+	          ));
+	        }
+	        filterItemsWithSeparator.push(filterItems[i]);
+	      }
 	
 	      return _react2.default.createElement(
 	        _reactAddonsCssTransitionGroup2.default,
@@ -28499,8 +28514,8 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            null,
-	            filterItems
+	            { className: 'filter-container' },
+	            filterItemsWithSeparator
 	          ),
 	          _react2.default.createElement(_project2.default, { title: 'InsanFran', url: 'http://insanfran.us',
 	            filter: this.state.filterItem,
@@ -28519,7 +28534,7 @@
 	            description: 'A sudoku solver that uses a backtracking algorithm. Renders animations asynchronously from a queue. Built with Javascript and HTML5 Canvas.' }),
 	          _react2.default.createElement(_project2.default, { title: 'Tron', url: 'http://momajd.github.io/Tron/',
 	            filter: this.state.filterItem,
-	            technologies: ["javascript", "jquery", "html5", "algorithm"],
+	            technologies: ["javascript", "jquery", "html5"],
 	            imageUrl: 'http://i.imgur.com/yphZFFg.gif',
 	            description: 'Remake of the classic arcade game using Javascript, jQuery, HTML5, and CSS. All rendering is done by manipulating HTML elements with jQuery.' }),
 	          _react2.default.createElement(_project2.default, { title: 'Unbeatable Tic-Tac-Toe', url: 'http://momajd.github.io/Unbeatable-Tic-Tac-Toe',
@@ -28531,7 +28546,12 @@
 	            filter: this.state.filterItem,
 	            technologies: ["ruby"],
 	            imageUrl: 'images/rails_lite.png',
-	            description: 'Rails Lite is a web server MVC framework inspired by the functionality of Ruby on Rails. Built in Ruby. Parses requests and finds matching routes using regular expression, envokes a controller action, and constructs a response using ERB templating.' })
+	            description: 'Rails Lite is a web server MVC framework inspired by the functionality of Ruby on Rails. Built in Ruby. Parses requests and finds matching routes using regular expression, envokes a controller action, and constructs a response using ERB templating.' }),
+	          _react2.default.createElement(_project2.default, { title: 'Mo Majd', url: 'http://momajd.com',
+	            filter: this.state.filterItem,
+	            technologies: ["react"],
+	            imageUrl: 'images/Portfolio.png',
+	            description: 'The site you are currently on was built from scratch using React. The cool background is from the particles.js library' })
 	        )
 	      );
 	    }
