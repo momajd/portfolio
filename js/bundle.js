@@ -28437,9 +28437,9 @@
 	
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 	
-	var _image_overlay = __webpack_require__(247);
+	var _project = __webpack_require__(247);
 	
-	var _image_overlay2 = _interopRequireDefault(_image_overlay);
+	var _project2 = _interopRequireDefault(_project);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -28478,195 +28478,30 @@
 	            { className: 'section-title' },
 	            'Projects'
 	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'project' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://insanfran.us', className: 'image' },
-	              _react2.default.createElement('img', { src: 'http://i.imgur.com/y79QzAR.gif' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-description' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://insanfran.us' },
-	                  'InsanFran'
-	                ),
-	                '\xA0',
-	                _react2.default.createElement('i', { className: 'devicon-rails-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-react-original' }),
-	                _react2.default.createElement('i', { className: 'devicon-postgresql-plain' })
-	              ),
-	              _react2.default.createElement('hr', null),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'InsanFran is a full-stack application for sharing San Francisco photography. It was inspired by Instagram. Built with Rails, React, Flux. RESTful JSON API on backend, reusable view components on frontend, and lots of other good stuff.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'project' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://ninetyninebridges.herokuapp.com', className: 'image' },
-	              _react2.default.createElement('img', { src: 'images/99bridges.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-description' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://ninetyninebridges.herokuapp.com' },
-	                  '99Bridges'
-	                ),
-	                '\xA0',
-	                _react2.default.createElement('i', { className: 'devicon-rails-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-react-original' }),
-	                _react2.default.createElement('i', { className: 'devicon-postgresql-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-bootstrap-plain' })
-	              ),
-	              _react2.default.createElement('hr', null),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                '99Bridges is an original full-stack application that allows bridge engineers and enthusiasts to find and track information on bridges. Built with Ruby on Rails, React, Flux, React-bootstrap, Google Maps API '
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'project' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://momajd.github.io/sudoku-solver/', className: 'image' },
-	              _react2.default.createElement('img', { src: 'http://i.imgur.com/KdErCOU.gif' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-description' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://momajd.github.io/sudoku-solver/' },
-	                  'Sudoku Solver'
-	                ),
-	                '\xA0',
-	                _react2.default.createElement('i', { className: 'devicon-javascript-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-html5-plain' })
-	              ),
-	              _react2.default.createElement('hr', null),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'A sudoku solver that uses a backtracking algorithm. Renders animations asynchronously from a queue. Built with Javascript and HTML5 Canvas.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'project' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://momajd.github.io/Tron/', className: 'image' },
-	              _react2.default.createElement('img', { src: 'http://i.imgur.com/yphZFFg.gif' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-description' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://momajd.github.io/Tron/' },
-	                  'Tron'
-	                ),
-	                '\xA0',
-	                _react2.default.createElement('i', { className: 'devicon-javascript-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-jquery-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-html5-plain' })
-	              ),
-	              _react2.default.createElement('hr', null),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Remake of the classic arcade game using Javascript, jQuery, HTML5, and CSS. All rendering is done by manipulating HTML elements with jQuery.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'project' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://momajd.github.io/Unbeatable-Tic-Tac-Toe', className: 'image' },
-	              _react2.default.createElement('img', { src: 'images/tic-tac-toe.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-description' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'http://momajd.github.io/Unbeatable-Tic-Tac-Toe' },
-	                  'Unbeatable Tic-Tac-Toe'
-	                ),
-	                '\xA0',
-	                _react2.default.createElement('i', { className: 'devicon-javascript-plain' }),
-	                _react2.default.createElement('i', { className: 'devicon-react-original' })
-	              ),
-	              _react2.default.createElement('hr', null),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'A tic-tac-toe game that can\'t be won. The computer player uses a poly-tree data stucture and depth-first-search algorithm to find the optimal moves. Built with JS and React.'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'project' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/momajd/Rails-Lite', className: 'image' },
-	              _react2.default.createElement('img', { src: 'images/rails_lite.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'project-description' },
-	              _react2.default.createElement(
-	                'p',
-	                { className: 'project-title' },
-	                _react2.default.createElement(
-	                  'a',
-	                  { href: 'https://github.com/momajd/Rails-Lite' },
-	                  'Rails Lite'
-	                ),
-	                '\xA0',
-	                _react2.default.createElement('i', { className: 'devicon-ruby-plain' })
-	              ),
-	              _react2.default.createElement('hr', null),
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'Rails Lite is a web server MVC framework inspired by the functionality of Ruby on Rails. Built in Ruby. Parses requests and finds matching routes using regular expression, envokes a controller action, and constructs a response using ERB templating.'
-	              )
-	            )
-	          )
+	          _react2.default.createElement(_project2.default, { title: 'InsanFran', url: 'http://insanfran.us',
+	            technologies: ["rails", "react", "postgresql"],
+	            imageUrl: 'http://i.imgur.com/y79QzAR.gif',
+	            description: 'InsanFran is a full-stack application for sharing San Francisco photography. It was inspired by Instagram. Built with Rails, React, Flux. RESTful JSON API on backend, reusable view components on frontend, and lots of other good stuff.' }),
+	          _react2.default.createElement(_project2.default, { title: '99Bridges', url: 'http://ninetyninebridges.herokuapp.com',
+	            technologies: ["rails", "react", "postgresql", "bootstrap"],
+	            imageUrl: 'images/99bridges.png',
+	            description: '99Bridges is an original full-stack application that allows bridge engineers and enthusiasts to find and track information on bridges. Built with Ruby on Rails, React, Flux, React-bootstrap, Google Maps API' }),
+	          _react2.default.createElement(_project2.default, { title: 'Sudoku Solver', url: 'http://momajd.github.io/sudoku-solver/',
+	            technologies: ["javascript", "html", "algorithm"],
+	            imageUrl: 'http://i.imgur.com/KdErCOU.gif',
+	            description: 'A sudoku solver that uses a backtracking algorithm. Renders animations asynchronously from a queue. Built with Javascript and HTML5 Canvas.' }),
+	          _react2.default.createElement(_project2.default, { title: 'Tron', url: 'http://momajd.github.io/Tron/',
+	            technologies: ["javascript", "jquery", "html", "algorithm"],
+	            imageUrl: 'http://i.imgur.com/yphZFFg.gif',
+	            description: 'Remake of the classic arcade game using Javascript, jQuery, HTML5, and CSS. All rendering is done by manipulating HTML elements with jQuery.' }),
+	          _react2.default.createElement(_project2.default, { title: 'Unbeatable Tic-Tac-Toe', url: 'http://momajd.github.io/Unbeatable-Tic-Tac-Toe',
+	            technologies: ["javascript", "react", "algorithm"],
+	            imageUrl: 'images/tic-tac-toe.png',
+	            description: 'A tic-tac-toe game that can\'t be won. The computer player uses a poly-tree data stucture and depth-first-search algorithm to find the optimal moves. Built with JS and React.' }),
+	          _react2.default.createElement(_project2.default, { title: 'Rails Lite', url: 'https://github.com/momajd/Rails-Lite',
+	            technologies: ["ruby"],
+	            imageUrl: 'images/rails_lite.png',
+	            description: 'Rails Lite is a web server MVC framework inspired by the functionality of Ruby on Rails. Built in Ruby. Parses requests and finds matching routes using regular expression, envokes a controller action, and constructs a response using ERB templating.' })
 	        )
 	      );
 	    }
@@ -28701,31 +28536,70 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	// TODO remove if not fitting
-	var ImageOverlay = function (_React$Component) {
-	  _inherits(ImageOverlay, _React$Component);
+	var Project = function (_React$Component) {
+	  _inherits(Project, _React$Component);
 	
-	  function ImageOverlay() {
-	    _classCallCheck(this, ImageOverlay);
+	  function Project() {
+	    _classCallCheck(this, Project);
 	
-	    return _possibleConstructorReturn(this, (ImageOverlay.__proto__ || Object.getPrototypeOf(ImageOverlay)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).apply(this, arguments));
 	  }
 	
-	  _createClass(ImageOverlay, [{
+	  _createClass(Project, [{
 	    key: "render",
 	    value: function render() {
+	      var iconClasses = {
+	        "rails": "devicon-rails-plain",
+	        "ruby": "devicon-ruby-plain",
+	        "postgresql": "devicon-postgresql-plain",
+	        "javascript": "devicon-javascript-plain",
+	        "jquery": "devicon-jquery-plain",
+	        "html": "devicon-html5-plain",
+	        "react": "devicon-react-original",
+	        "bootstrap": "devicon-bootstrap-plain"
+	      };
+	
+	      var icons = this.props.technologies.map(function (icon) {
+	        return _react2.default.createElement("i", { key: icon, className: iconClasses[icon] });
+	      });
+	
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "overlay" },
-	        "I'm the overlay"
+	        { className: "project" },
+	        _react2.default.createElement(
+	          "a",
+	          { href: this.props.url, className: "image" },
+	          _react2.default.createElement("img", { src: this.props.imageUrl })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "project-description" },
+	          _react2.default.createElement(
+	            "p",
+	            { className: "project-title" },
+	            _react2.default.createElement(
+	              "a",
+	              { href: this.props.url },
+	              this.props.title
+	            ),
+	            "\xA0",
+	            icons
+	          ),
+	          _react2.default.createElement("hr", null),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            this.props.description
+	          )
+	        )
 	      );
 	    }
 	  }]);
 	
-	  return ImageOverlay;
+	  return Project;
 	}(_react2.default.Component);
 	
-	exports.default = ImageOverlay;
+	exports.default = Project;
 
 /***/ }
 /******/ ]);
