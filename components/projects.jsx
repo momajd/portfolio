@@ -103,7 +103,7 @@ export default class Projects extends React.Component {
             <Project title="Mo Majd" url="http://momajd.com"
             filter={this.state.filterItem}
             technologies={["react"]}
-            imageUrl="images/Portfolio.png"
+            imageUrl="images/portfolio.png"
             description="The site you are currently on was built from scratch
               using React. The cool background is from the particles.js library" />
         </div>
