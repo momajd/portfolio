@@ -1,6 +1,5 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
   color: #676666;
 }
 
@@ -223,10 +222,12 @@ a {
 }
 
 .project-description {
+  font-size: 18px;
   width: 60%;
 }
 
 .filter-container {
+  font-size: 18px;
   margin-top: 20px;
 }
 
