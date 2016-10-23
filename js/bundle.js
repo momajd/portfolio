@@ -28455,12 +28455,31 @@
 	  function Projects() {
 	    _classCallCheck(this, Projects);
 	
-	    return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+	
+	    _this.state = { filterItem: "all" };
+	    return _this;
 	  }
 	
 	  _createClass(Projects, [{
+	    key: 'updateFilter',
+	    value: function updateFilter(e) {
+	      this.setState({ filterItem: e.target.textContent.toLowerCase() });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+	
+	      var filters = ["All", "Ruby", "Rails", "PostgreSQL", "Javascript", "React", "jQuery", "Algorithm", "HTML5"];
+	
+	      var filterItems = filters.map(function (filter) {
+	        return _react2.default.createElement(
+	          'span',
+	          { key: filter, onClick: _this2.updateFilter.bind(_this2) },
+	          filter
+	        );
+	      });
 	
 	      return _react2.default.createElement(
 	        _reactAddonsCssTransitionGroup2.default,
@@ -28478,27 +28497,38 @@
 	            { className: 'section-title' },
 	            'Projects'
 	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            filterItems
+	          ),
 	          _react2.default.createElement(_project2.default, { title: 'InsanFran', url: 'http://insanfran.us',
+	            filter: this.state.filterItem,
 	            technologies: ["rails", "react", "postgresql"],
 	            imageUrl: 'http://i.imgur.com/y79QzAR.gif',
 	            description: 'InsanFran is a full-stack application for sharing San Francisco photography. It was inspired by Instagram. Built with Rails, React, Flux. RESTful JSON API on backend, reusable view components on frontend, and lots of other good stuff.' }),
 	          _react2.default.createElement(_project2.default, { title: '99Bridges', url: 'http://ninetyninebridges.herokuapp.com',
+	            filter: this.state.filterItem,
 	            technologies: ["rails", "react", "postgresql", "bootstrap"],
 	            imageUrl: 'images/99bridges.png',
 	            description: '99Bridges is an original full-stack application that allows bridge engineers and enthusiasts to find and track information on bridges. Built with Ruby on Rails, React, Flux, React-bootstrap, Google Maps API' }),
 	          _react2.default.createElement(_project2.default, { title: 'Sudoku Solver', url: 'http://momajd.github.io/sudoku-solver/',
-	            technologies: ["javascript", "html", "algorithm"],
+	            filter: this.state.filterItem,
+	            technologies: ["javascript", "html5", "algorithm"],
 	            imageUrl: 'http://i.imgur.com/KdErCOU.gif',
 	            description: 'A sudoku solver that uses a backtracking algorithm. Renders animations asynchronously from a queue. Built with Javascript and HTML5 Canvas.' }),
 	          _react2.default.createElement(_project2.default, { title: 'Tron', url: 'http://momajd.github.io/Tron/',
-	            technologies: ["javascript", "jquery", "html", "algorithm"],
+	            filter: this.state.filterItem,
+	            technologies: ["javascript", "jquery", "html5", "algorithm"],
 	            imageUrl: 'http://i.imgur.com/yphZFFg.gif',
 	            description: 'Remake of the classic arcade game using Javascript, jQuery, HTML5, and CSS. All rendering is done by manipulating HTML elements with jQuery.' }),
 	          _react2.default.createElement(_project2.default, { title: 'Unbeatable Tic-Tac-Toe', url: 'http://momajd.github.io/Unbeatable-Tic-Tac-Toe',
+	            filter: this.state.filterItem,
 	            technologies: ["javascript", "react", "algorithm"],
 	            imageUrl: 'images/tic-tac-toe.png',
 	            description: 'A tic-tac-toe game that can\'t be won. The computer player uses a poly-tree data stucture and depth-first-search algorithm to find the optimal moves. Built with JS and React.' }),
 	          _react2.default.createElement(_project2.default, { title: 'Rails Lite', url: 'https://github.com/momajd/Rails-Lite',
+	            filter: this.state.filterItem,
 	            technologies: ["ruby"],
 	            imageUrl: 'images/rails_lite.png',
 	            description: 'Rails Lite is a web server MVC framework inspired by the functionality of Ruby on Rails. Built in Ruby. Parses requests and finds matching routes using regular expression, envokes a controller action, and constructs a response using ERB templating.' })
@@ -28554,7 +28584,7 @@
 	        "postgresql": "devicon-postgresql-plain",
 	        "javascript": "devicon-javascript-plain",
 	        "jquery": "devicon-jquery-plain",
-	        "html": "devicon-html5-plain",
+	        "html5": "devicon-html5-plain",
 	        "react": "devicon-react-original",
 	        "bootstrap": "devicon-bootstrap-plain"
 	      };
@@ -28563,35 +28593,44 @@
 	        return _react2.default.createElement("i", { key: icon, className: iconClasses[icon] });
 	      });
 	
+	      var project = void 0;
+	      if (this.props.filter === "all" || this.props.technologies.includes(this.props.filter)) {
+	        project = _react2.default.createElement(
+	          "div",
+	          { className: "project" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: this.props.url, className: "image" },
+	            _react2.default.createElement("img", { src: this.props.imageUrl })
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "project-description" },
+	            _react2.default.createElement(
+	              "p",
+	              { className: "project-title" },
+	              _react2.default.createElement(
+	                "a",
+	                { href: this.props.url },
+	                this.props.title
+	              ),
+	              "\xA0",
+	              icons
+	            ),
+	            _react2.default.createElement("hr", null),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              this.props.description
+	            )
+	          )
+	        );
+	      }
+	
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "project" },
-	        _react2.default.createElement(
-	          "a",
-	          { href: this.props.url, className: "image" },
-	          _react2.default.createElement("img", { src: this.props.imageUrl })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "project-description" },
-	          _react2.default.createElement(
-	            "p",
-	            { className: "project-title" },
-	            _react2.default.createElement(
-	              "a",
-	              { href: this.props.url },
-	              this.props.title
-	            ),
-	            "\xA0",
-	            icons
-	          ),
-	          _react2.default.createElement("hr", null),
-	          _react2.default.createElement(
-	            "p",
-	            null,
-	            this.props.description
-	          )
-	        )
+	        null,
+	        project
 	      );
 	    }
 	  }]);

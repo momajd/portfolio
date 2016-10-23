@@ -4,7 +4,22 @@ import Project from './project';
 
 export default class Projects extends React.Component {
 
+  constructor() {
+    super();
+    this.state = {filterItem: "all"};
+  }
+
+  updateFilter(e) {
+    this.setState({filterItem: e.target.textContent.toLowerCase()});
+  }
+
   render () {
+    let filters = ["All", "Ruby", "Rails", "PostgreSQL", "Javascript",
+                    "React", "jQuery", "Algorithm", "HTML5"];
+
+    let filterItems = filters.map(filter => {
+                 return <span key={filter} onClick={this.updateFilter.bind(this)}>{filter}</span>;
+               });
 
     return (
       <ReactCSSTransitionGroup
@@ -16,7 +31,12 @@ export default class Projects extends React.Component {
         <div className="projects-page">
           <h1 className="section-title">Projects</h1>
 
+          <div>
+            {filterItems}
+          </div>
+
           <Project title="InsanFran" url="http://insanfran.us"
+            filter={this.state.filterItem}
             technologies={["rails", "react", "postgresql"]}
             imageUrl="http://i.imgur.com/y79QzAR.gif"
             description="InsanFran is a full-stack application for sharing San
@@ -25,41 +45,46 @@ export default class Projects extends React.Component {
               view components on frontend, and lots of other good stuff."/>
 
           <Project title="99Bridges" url="http://ninetyninebridges.herokuapp.com"
-          technologies={["rails", "react", "postgresql", "bootstrap"]}
-          imageUrl="images/99bridges.png"
-          description="99Bridges is an original full-stack application that allows
-            bridge engineers and enthusiasts to find and track information
-            on bridges. Built with Ruby on Rails, React, Flux,
-            React-bootstrap, Google Maps API" />
+            filter={this.state.filterItem}
+            technologies={["rails", "react", "postgresql", "bootstrap"]}
+            imageUrl="images/99bridges.png"
+            description="99Bridges is an original full-stack application that allows
+              bridge engineers and enthusiasts to find and track information
+              on bridges. Built with Ruby on Rails, React, Flux,
+              React-bootstrap, Google Maps API" />
 
           <Project title="Sudoku Solver" url="http://momajd.github.io/sudoku-solver/"
-          technologies={["javascript", "html", "algorithm"]}
-          imageUrl="http://i.imgur.com/KdErCOU.gif"
-          description="A sudoku solver that uses a backtracking algorithm. Renders
-            animations asynchronously from a queue. Built with Javascript
-            and HTML5 Canvas." />
+            filter={this.state.filterItem}
+            technologies={["javascript", "html5", "algorithm"]}
+            imageUrl="http://i.imgur.com/KdErCOU.gif"
+            description="A sudoku solver that uses a backtracking algorithm. Renders
+              animations asynchronously from a queue. Built with Javascript
+              and HTML5 Canvas." />
 
           <Project title="Tron" url="http://momajd.github.io/Tron/"
-          technologies={["javascript", "jquery", "html", "algorithm"]}
-          imageUrl="http://i.imgur.com/yphZFFg.gif"
-          description="Remake of the classic arcade game using Javascript, jQuery,
-            HTML5, and CSS. All rendering is done by manipulating HTML
-            elements with jQuery." />
+            filter={this.state.filterItem}
+            technologies={["javascript", "jquery", "html5", "algorithm"]}
+            imageUrl="http://i.imgur.com/yphZFFg.gif"
+            description="Remake of the classic arcade game using Javascript, jQuery,
+              HTML5, and CSS. All rendering is done by manipulating HTML
+              elements with jQuery." />
 
           <Project title="Unbeatable Tic-Tac-Toe" url="http://momajd.github.io/Unbeatable-Tic-Tac-Toe"
-          technologies={["javascript", "react", "algorithm"]}
-          imageUrl="images/tic-tac-toe.png"
-          description="A tic-tac-toe game that can't be won. The computer player
-            uses a poly-tree data stucture and depth-first-search
-            algorithm to find the optimal moves. Built with JS and React." />
+            filter={this.state.filterItem}
+            technologies={["javascript", "react", "algorithm"]}
+            imageUrl="images/tic-tac-toe.png"
+            description="A tic-tac-toe game that can't be won. The computer player
+              uses a poly-tree data stucture and depth-first-search
+              algorithm to find the optimal moves. Built with JS and React." />
 
           <Project title="Rails Lite" url="https://github.com/momajd/Rails-Lite"
-          technologies={["ruby"]}
-          imageUrl="images/rails_lite.png"
-          description="Rails Lite is a web server MVC framework inspired by the
-            functionality of Ruby on Rails. Built in Ruby. Parses requests
-            and finds matching routes using regular expression, envokes a
-            controller action, and constructs a response using ERB templating." />
+            filter={this.state.filterItem}
+            technologies={["ruby"]}
+            imageUrl="images/rails_lite.png"
+            description="Rails Lite is a web server MVC framework inspired by the
+              functionality of Ruby on Rails. Built in Ruby. Parses requests
+              and finds matching routes using regular expression, envokes a
+              controller action, and constructs a response using ERB templating." />
 
         </div>
       </ReactCSSTransitionGroup>

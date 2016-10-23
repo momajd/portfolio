@@ -9,7 +9,7 @@ export default class Project extends React.Component {
       "postgresql": "devicon-postgresql-plain",
       "javascript": "devicon-javascript-plain",
       "jquery": "devicon-jquery-plain",
-      "html": "devicon-html5-plain",
+      "html5": "devicon-html5-plain",
       "react": "devicon-react-original",
       "bootstrap": "devicon-bootstrap-plain"
     };
@@ -18,23 +18,32 @@ export default class Project extends React.Component {
       return <i key={icon} className={iconClasses[icon]}></i>;
     });
 
-    return (
-      <div className="project">
-        <a href={this.props.url} className="image">
-          <img src={this.props.imageUrl}/>
-        </a>
+    let project;
+    if (this.props.filter === "all" || this.props.technologies.includes(this.props.filter) ) {
+      project = (
+        <div className="project">
+          <a href={this.props.url} className="image">
+            <img src={this.props.imageUrl}/>
+          </a>
 
-        <div className="project-description">
-          <p className="project-title">
-            <a href={this.props.url}>{this.props.title}</a>
-            &nbsp;
-            {icons}
-          </p>
-          <hr/>
-          <p>
-            {this.props.description}
-          </p>
+          <div className="project-description">
+            <p className="project-title">
+              <a href={this.props.url}>{this.props.title}</a>
+              &nbsp;
+              {icons}
+            </p>
+            <hr/>
+            <p>
+              {this.props.description}
+            </p>
+          </div>
         </div>
+      );
+    }
+
+    return (
+      <div>
+        {project}
       </div>
     );
   }
