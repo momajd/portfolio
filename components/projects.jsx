@@ -100,6 +100,15 @@ export default class Projects extends React.Component {
               and finds matching routes using regular expression, envokes a
               controller action, and constructs a response using ERB templating." />
 
+            <Project title="Ruby Chess AI" url="https://github.com/momajd/Chess-AI"
+            filter={this.state.filterItem}
+            technologies={["ruby", "algorithm"]}
+            imageUrl="images/chess.png"
+            description="Chess game with Computer AI playable in the terminal.
+              Built in Ruby. Computer player uses a minimax algorithm in order to
+              'look ahead'. Heavily object-oriented - utilizes inheritance and
+               singleton design pattern." />
+
             <Project title="Mo Majd" url="http://momajd.com"
             filter={this.state.filterItem}
             technologies={["react"]}
