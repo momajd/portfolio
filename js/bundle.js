@@ -28245,13 +28245,10 @@
 	              'About Me'
 	            ),
 	            _react2.default.createElement('br', null),
-	            'I\'m a relentlessly curious software developer that loves building things.',
+	            'I\'m an engineer with a relentless curiousity and passion for building things.',
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement('br', null),
-	            'I grew up working in a small family-owned construction company and helped build several houses and offices in South Jersey. My background in construction led me to study Civil Engineering at Drexel University, where I completed a dual BS/MS program with a concentration in Structural Engineering. After finishing college in 2009, I got a job as a bridge designer in the philly area. During my time as an engineer I got really into automating things, and I started dabbling with programming languages such as Ruby and Python.',
-	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('br', null),
-	            'As my career went on, I became more and more interested in programming, and although I loved my career as a bridge designer, I wanted to take on a new challenge. I decided to move across the country to San Francisco to attend a top web development program called App Academy. I put in ~100 hour weeks to learn Rails, JS, JQuery, React, Flux, SQL, and many other modern languages and frameworks.',
+	            'I grew up working in a small family-owned construction company and helped build several houses and offices in South Jersey. My background in construction led me to study Civil Engineering at Drexel University, where I completed a dual BS/MS program with a concentration in Structural Engineering. After finishing college in 2009, I got a job as a bridge designer in the philly area. During my time as an engineer I got really into automating things, and I started dabbling with programming languages such as Ruby and Javascript.',
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement('br', null),
 	            'By combining my analytical and problem-solving skills from engineering with my programming and web development knowledge, I believe I will be able to make a significant contribution to any team or company.'

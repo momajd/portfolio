@@ -77,7 +77,7 @@ a {
 }
 
 .description {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 6px;
@@ -95,8 +95,8 @@ a {
 }
 
 .home-icons .fa:hover {
-  -webkit-transform: translate(0px,-10px); /* Safari */
-  transform: translate(0px,-10px); /* Standard syntax */
+  -webkit-transform: translate(0px,-8px); /* Safari */
+  transform: translate(0px,-8px); /* Standard syntax */
 }
 
 .about-page {
