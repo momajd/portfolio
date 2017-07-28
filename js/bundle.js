@@ -28553,7 +28553,12 @@
 	            filter: this.state.filterItem,
 	            technologies: ["react"],
 	            imageUrl: 'images/portfolio.png',
-	            description: 'The site you are currently on was built from scratch using React. The cool background is from the particles.js library' })
+	            description: 'The site you are currently on was built from scratch using React. The cool background is from the particles.js library' }),
+	          _react2.default.createElement(_project2.default, { title: 'Planets', url: 'https://momajd.github.io/planets/',
+	            filter: this.state.filterItem,
+	            technologies: ["javascript", "html5"],
+	            imageUrl: 'https://media.giphy.com/media/OclNTHOaVRggU/giphy.gif',
+	            description: 'A simulation of the solar system that uses Newton\'s Universal Law of Gravitation and 2nd Law of Motion. The user can zoom in and out, and also modify the mass of each planet to change gravitational effects and orbit.' })
 	        )
 	      );
 	    }
