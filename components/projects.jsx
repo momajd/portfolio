@@ -49,6 +49,23 @@ export default class Projects extends React.Component {
             {filterItemsWithSeparator}
           </div>
 
+          <Project title="Sudoku Solver" url="http://momajd.github.io/sudoku-solver/"
+            filter={this.state.filterItem}
+            technologies={["javascript", "html5", "algorithm"]}
+            imageUrl="http://i.imgur.com/KdErCOU.gif"
+            description="A sudoku solver that uses a backtracking algorithm. Renders
+              animations asynchronously from a queue. Built with Javascript
+              and HTML5 Canvas." />
+
+          <Project title="Planets" url="https://momajd.github.io/planets/"
+          filter={this.state.filterItem}
+          technologies={["javascript", "html5"]}
+          imageUrl="https://media.giphy.com/media/OclNTHOaVRggU/giphy.gif"
+          description="A simulation of the solar system that uses Newton's
+            Universal Law of Gravitation and 2nd Law of Motion. The user can
+            zoom in and out, and also modify the mass of each planet to change
+            gravitational effects and orbit." />
+
           <Project title="InsanFran" url="http://insanfran.us"
             filter={this.state.filterItem}
             technologies={["rails", "react", "postgresql"]}
@@ -67,14 +84,6 @@ export default class Projects extends React.Component {
               on bridges. Built with Ruby on Rails, React, Flux,
               React-bootstrap, Google Maps API" />
 
-          <Project title="Sudoku Solver" url="http://momajd.github.io/sudoku-solver/"
-            filter={this.state.filterItem}
-            technologies={["javascript", "html5", "algorithm"]}
-            imageUrl="http://i.imgur.com/KdErCOU.gif"
-            description="A sudoku solver that uses a backtracking algorithm. Renders
-              animations asynchronously from a queue. Built with Javascript
-              and HTML5 Canvas." />
-
           <Project title="Tron" url="http://momajd.github.io/Tron/"
             filter={this.state.filterItem}
             technologies={["javascript", "jquery", "html5"]}
@@ -91,6 +100,15 @@ export default class Projects extends React.Component {
               uses a poly-tree data stucture and depth-first-search
               algorithm to find the optimal moves. Built with JS and React." />
 
+          <Project title="Ruby Chess AI" url="https://github.com/momajd/Chess-AI"
+          filter={this.state.filterItem}
+          technologies={["ruby", "algorithm"]}
+          imageUrl="images/chess.png"
+          description="Chess game with Computer AI playable in the terminal.
+            Built in Ruby. Computer player uses a minimax algorithm in order to
+            'look ahead'. Heavily object-oriented - utilizes inheritance and
+             singleton design pattern." />
+
           <Project title="Rails Lite" url="https://github.com/momajd/Rails-Lite"
             filter={this.state.filterItem}
             technologies={["ruby"]}
@@ -100,30 +118,12 @@ export default class Projects extends React.Component {
               and finds matching routes using regular expression, envokes a
               controller action, and constructs a response using ERB templating." />
 
-            <Project title="Ruby Chess AI" url="https://github.com/momajd/Chess-AI"
-            filter={this.state.filterItem}
-            technologies={["ruby", "algorithm"]}
-            imageUrl="images/chess.png"
-            description="Chess game with Computer AI playable in the terminal.
-              Built in Ruby. Computer player uses a minimax algorithm in order to
-              'look ahead'. Heavily object-oriented - utilizes inheritance and
-               singleton design pattern." />
-
             <Project title="Mo Majd" url="http://momajd.com"
             filter={this.state.filterItem}
             technologies={["react"]}
             imageUrl="images/portfolio.png"
             description="The site you are currently on was built from scratch
               using React. The cool background is from the particles.js library" />
-
-            <Project title="Planets" url="https://momajd.github.io/planets/"
-            filter={this.state.filterItem}
-            technologies={["javascript", "html5"]}
-            imageUrl="https://media.giphy.com/media/OclNTHOaVRggU/giphy.gif"
-            description="A simulation of the solar system that uses Newton's
-              Universal Law of Gravitation and 2nd Law of Motion. The user can
-              zoom in and out, and also modify the mass of each planet to change
-              gravitational effects and orbit." />
         </div>
       </ReactCSSTransitionGroup>
     );
